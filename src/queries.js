@@ -221,8 +221,6 @@ export const SHOP_POLICIES_QUERY = `
   }
 `
 
-
-
 export const PAGES_QUERY = `
   query GetPages($first: Int!, $after: String) {
     pages(first: $first, after: $after) {

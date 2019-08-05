@@ -1,5 +1,4 @@
 import createNodeHelpers from "gatsby-node-helpers"
-import { camelCase } from "lodash/fp"
 import { map } from "p-iteration"
 import { createRemoteFileNode } from "gatsby-source-filesystem"
 
@@ -95,7 +94,6 @@ export const CollectionNode = imageArgs =>
   })
 
 export const CommentNode = _imageArgs => createNodeFactory(COMMENT)
-
 
 export const ProductNode = imageArgs =>
   createNodeFactory(PRODUCT, async node => {
